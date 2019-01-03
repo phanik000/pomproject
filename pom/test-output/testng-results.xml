@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="39241" started-at="2018-12-28T09:53:13Z" finished-at="2018-12-28T09:53:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="39241" started-at="2018-12-28T09:53:13Z" finished-at="2018-12-28T09:53:52Z">
+      <class name="com.timesheet.tests.AddStaffTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.timesheet.tests.AddStaffTest@19e5ddf]" name="launchBrowser" is-config="true" duration-ms="9862" started-at="2018-12-28T09:53:13Z" finished-at="2018-12-28T09:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="verifyAddStaffPageTest()[pri:1, instance:com.timesheet.tests.AddStaffTest@19e5ddf]" name="verifyAddStaffPageTest" duration-ms="3619" started-at="2018-12-28T09:53:22Z" finished-at="2018-12-28T09:53:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddStaffPageTest -->
+        <test-method status="FAIL" signature="verifyAddStaffFormTest()[pri:2, instance:com.timesheet.tests.AddStaffTest@19e5ddf]" name="verifyAddStaffFormTest" duration-ms="3229" started-at="2018-12-28T09:53:26Z" finished-at="2018-12-28T09:53:29Z">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'ADMIN-PC', ip: '192.168.0.140', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5444, moz:profile: C:\Users\admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9cb81512-b316-4cd4-a7c2-3788a780a8e0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'ADMIN-PC', ip: '192.168.0.140', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5444, moz:profile: C:\Users\admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9cb81512-b316-4cd4-a7c2-3788a780a8e0
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:928)
+at com.timesheet.pages.AddStaff.verifyAlertmessage(AddStaff.java:130)
+at com.timesheet.tests.AddStaffTest.verifyAddStaffFormTest(AddStaffTest.java:66)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddStaffFormTest -->
+        <test-method status="PASS" signature="verifyAddStaffJoiningDateCheck()[pri:3, instance:com.timesheet.tests.AddStaffTest@19e5ddf]" name="verifyAddStaffJoiningDateCheck" duration-ms="3541" started-at="2018-12-28T09:53:29Z" finished-at="2018-12-28T09:53:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddStaffJoiningDateCheck -->
+        <test-method status="PASS" signature="verifyAddStaffNameCheck()[pri:4, instance:com.timesheet.tests.AddStaffTest@19e5ddf]" name="verifyAddStaffNameCheck" duration-ms="3070" started-at="2018-12-28T09:53:33Z" finished-at="2018-12-28T09:53:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddStaffNameCheck -->
+        <test-method status="PASS" signature="verifyAddStaffSalaryCheck()[pri:5, instance:com.timesheet.tests.AddStaffTest@19e5ddf]" name="verifyAddStaffSalaryCheck" duration-ms="2928" started-at="2018-12-28T09:53:36Z" finished-at="2018-12-28T09:53:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddStaffSalaryCheck -->
+        <test-method status="PASS" signature="verifyAddStaffLicenseCheck()[pri:6, instance:com.timesheet.tests.AddStaffTest@19e5ddf]" name="verifyAddStaffLicenseCheck" duration-ms="3596" started-at="2018-12-28T09:53:39Z" finished-at="2018-12-28T09:53:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddStaffLicenseCheck -->
+        <test-method status="PASS" signature="verifyAddStaffEmailCheck()[pri:7, instance:com.timesheet.tests.AddStaffTest@19e5ddf]" name="verifyAddStaffEmailCheck" duration-ms="2997" started-at="2018-12-28T09:53:42Z" finished-at="2018-12-28T09:53:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddStaffEmailCheck -->
+        <test-method status="PASS" signature="verifyAddStaffContactCheck()[pri:8, instance:com.timesheet.tests.AddStaffTest@19e5ddf]" name="verifyAddStaffContactCheck" duration-ms="3164" started-at="2018-12-28T09:53:45Z" finished-at="2018-12-28T09:53:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddStaffContactCheck -->
+        <test-method status="PASS" signature="verifyAddStaffAddressCheck()[pri:9, instance:com.timesheet.tests.AddStaffTest@19e5ddf]" name="verifyAddStaffAddressCheck" duration-ms="3177" started-at="2018-12-28T09:53:49Z" finished-at="2018-12-28T09:53:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddStaffAddressCheck -->
+      </class> <!-- com.timesheet.tests.AddStaffTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
